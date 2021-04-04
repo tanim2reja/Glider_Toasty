@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:padding="4dp"
+        android:background="@color/cardview_shadow_end_color"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/poster"
+        android:text="title"
+        android:gravity="center"
+        android:textSize="20sp"
+
+        android:layout_margin="12dp" />
+
+    <TextView
+        android:id="@+id/txtOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/poster"
+        android:layout_below="@+id/txtTitle"
+        android:lines="2"
+
+        android:text="overview"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/poster"
+        android:text="date"
+        android:layout_below="@+id/txtOverview"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/poster"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/teal_700" />
+</RelativeLayout>
